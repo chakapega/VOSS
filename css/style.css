@@ -2,16 +2,15 @@ body {
   margin: 0;
   padding: 0;
 }
-.header-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 .header {
-  position: relative;
-  height: 1024px;
-  width: 1440px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
   background: url(../images/0000.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .header__menu-button-container {
   position: absolute;
@@ -21,15 +20,12 @@ body {
   top: 20px;
 }
 .header__menu-button {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 64px;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
   background: #FFFFFF;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -44,8 +40,9 @@ body {
   position: absolute;
   width: 757px;
   height: 242px;
-  left: 683px;
+  left: 1083px;
   top: -43px;
+  user-select: none;
 
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -59,8 +56,9 @@ body {
   position: absolute;
   width: 1017px;
   height: 148px;
-  left: 375px;
-  top: 182px;
+  left: 735px;
+  top: 200px;
+  user-select: none;
 
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -70,4 +68,32 @@ body {
   text-align: right;
 
   color: rgba(37, 70, 139, 0.6);
+}
+.header__product-example-images {
+  position: absolute;
+  width: 579px;
+  height: 809px;
+  left: 1080px;
+  top: 310px;
+}
+.voss-flavored {
+  position: absolute;
+  width: 170px;
+  height: 701px;
+  left: 470px;
+  top: 81px;
+}
+.voss-still-1 {
+  position: absolute;
+  width: 195px;
+  height: 809px;
+  left: 220px;
+  top: 10px;
+}
+.voss-sparkling-1 {
+  position: absolute;
+  width: 170px;
+  height: 706px;
+  left: 10px;
+  top: 76px;
 }
